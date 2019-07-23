@@ -19,9 +19,4 @@ node {
    stage('CodeDeploy'){
          echo 'CodeDeploy'
    }
-   stage('Test Results'){
-         echo 'CodeDeploy'
-            junit testDataPublishers: [[$class: 'AttachmentPublisher']], testResults: 'test-reports/*.xml'
-
-   }
 }
